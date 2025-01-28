@@ -1,0 +1,33 @@
+{
+    "id": "ehentai",
+    "name": "E-Hentai",
+    "author": "YourName",
+    "version": 1,
+    "language": ["en", "jp"],
+    "nsfw": true,
+    "url": "https://e-hentai.org",
+    "entrypoint": "index.js",
+    "categories": ["doujinshi", "manga", "artist CG", "game CG", "western", "non-h", "image set", "cosplay"],
+    "search": {
+        "enabled": true,
+        "parameters": ["title", "tags", "artist"]
+    },
+    "pagination": {
+        "enabled": true,
+        "type": "page"
+    },
+    "manga": {
+        "cover": ".itg img",
+        "title": ".glink",
+        "id": ".glink@href"
+    },
+    "chapter": {
+        "selector": "#gdt .gdtm a",
+        "id": "a@href",
+        "title": "Chapter 1"
+    },
+    "pages": {
+        "selector": "#img",
+        "attribute": "src"
+    }
+}
